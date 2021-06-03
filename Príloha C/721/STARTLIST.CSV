@@ -1,0 +1,376 @@
+Event Code;Date;Time;Lane/order;Bib No;;;;;;;
+1;23.02.2020;09:00;;;;;;60;60 m prek·ûok [68,6 cm] PrÌpravka-dievËata Beh 01;;On line system .s.r.o.
+;;;5;0;Koûuchov·;Tamara;ACMAL
+;;;3;0;Kozolkov·;Melissa;AKLZM
+;;;1;0;äuhajdov·;Lujza;ASHBA
+;;;6;0;Pag·Ëov·;Alûbeta;ACMAL
+;;;2;0;Ondr·öekov·;Hana;AKRPE
+;;;4;0;Gondov·;Nat·lia;NASAA
+2;23.02.2020;09:00;;;;;;60;60 m prek·ûok [68,6 cm] PrÌpravka-dievËata Beh 02;;On line system .s.r.o.
+;;;7;0;Staökov·;Nela;ACMAL
+;;;3;0;Letkov·;MagdalÈna;INTER
+;;;5;0;Jalaköov·;Ema;LESKY
+;;;2;0;PrÌkopsk·;Lucia;LESKY
+;;;6;0;MÈsz·rosov·;Liliana;AKRPE
+;;;1;0;äiökov·;LÌvia;AKRPE
+;;;4;0;Antal;Emma;MEGDS
+3;23.02.2020;09:00;;;;;;60;60 m prek·ûok [68,6 cm] PrÌpravka-dievËata Beh 03;;On line system .s.r.o.
+;;;2;0;Psotn·;Eliöka;SLATN
+;;;5;0;Karvai;KarolÌna;ASHBA
+;;;7;0;Steiger;Emma;NASAA
+;;;3;0;KæuË·rov·;Tereza;STKPE
+;;;6;0;Markov·;Miroslava;STKPE
+;;;4;0;Fornadeæov·;Nina;AKRPE
+4;23.02.2020;09:00;;;;;;60;60 m prek·ûok [68,6 cm] PrÌpravka-dievËata Beh 04;;On line system .s.r.o.
+;;;2;0;SalÌni;Adela;AKLZM
+;;;7;0;Zemanov·;KarolÌna;AKLZM
+;;;4;0;Bielikov·;Anna;AKLZM
+;;;5;0;De Roche;Manay;MEGDS
+;;;3;0;Hol·skov·;Simona;AKRPE
+;;;6;0;Masarykov·;ViktÛria;AKLZM
+5;23.02.2020;09:10;;;;;;60;60 m prek·ûok [68,6 cm] MiniprÌpravka-dievËat· 01;;On line system .s.r.o.
+;;;6;0;Kr·lov·;Simona;ASHBA
+;;;7;0;SeËk·rov·;Alexandra;AKLZM
+;;;3;0;KadleËÌkov·;Lilly;AKRPE
+;;;2;0;Ondr·öekov·;T·Úa;AKRPE
+;;;4;0;Habov·;Marianna;ACMAL
+;;;5;0;Habov·;Romana;ACMAL
+;;;1;0;äiökov·;Adela;AKRPE
+6;23.02.2020;09:10;;;;;;60;60 m prek·ûok [68,6 cm] MiniprÌpravka-dievËat· 02;;On line system .s.r.o.
+;;;3;0;Steiger;Sofia;NASAA
+;;;7;0;Vanekov·;Adela;ACMAL
+;;;5;0;Polohov·;Daniela;LESKY
+;;;2;0;Tankov·;Tiffany;AKRPE
+;;;6;0;äurganov·;Marcela;AKRPE
+;;;4;0;Pleschov·;Lucia;ASHBA
+7;23.02.2020;09:20;;;;;;60;60 m prek·ûok [68,6 cm] PrÌpravka-chlapci 01;;On line system .s.r.o.
+;;;3;0;Fut·s;Maxim;ASHBA
+;;;4;0;»ahoj;Gabriel;SLATN
+;;;5;0;Dubina;Adam;ASHBA
+;;;7;0;KrajËoviË;Leonard;AKLZM
+;;;1;0;Michalko;Dominik;AKRPE
+;;;6;0;Horv·th;Theodor;AKPSC
+;;;8;0;Posztos;Istv·n;MEGDS
+;;;2;0;Iöunin;Marek;ACMAL
+8;23.02.2020;09:20;;;;;;60;60 m prek·ûok [68,6 cm] PrÌpravka-chlapci 02;;On line system .s.r.o.
+;;;3;0;Paufler;Damian;AKPSC
+;;;7;0;äindel·r;äimon;ASHBA
+;;;8;0;Vesel˝;Alexander;ACMAL
+;;;6;0;RÈvay;äimon;NASAA
+;;;1;0;Talian;Branislav;SLATN
+;;;5;0;Haba;Kriötof;ACMAL
+;;;4;0;Baranyai;Viktor;MEGDS
+;;;2;0;Samsely;Stanislav;BKHNB
+9;23.02.2020;09:20;;;;;;60;60 m prek·ûok [68,6 cm] PrÌpravka-chlapci 03;;On line system .s.r.o.
+;;;3;0;Mikl·ö;Niko;AKRPE
+;;;8;0;SuËko;Tom·ö;AKLZM
+;;;6;0;Mr·z;Richard;ACMAL
+;;;4;0;BalaûoviË;Gabriel;LESKY
+;;;5;0;Gibson;Alexander Paul;AKRPE
+;;;2;0;Sal·k;Daniel;ASHBA
+;;;7;0;SeËk·r;Samuel;AKLZM
+;;;1;0;Singhoffer;Tobias;STKPE
+10;23.02.2020;09:20;;;;;;60;60 m prek·ûok [68,6 cm] PrÌpravka-chlapci 04;;On line system .s.r.o.
+;;;2;0;StrapoÚ;Daniel;ASHBA
+;;;4;0;Findor;Milan;ASHBA
+;;;6;0;Sklen·r;Luk·ö;AKRPE
+;;;5;0;JovankoviË;Sebastian Manuel;ASHBA
+;;;1;0;Znamen·Ëek;Marek;AKRPE
+;;;7;0;Tietz;Patrik;AKRPE
+;;;3;0;Rusn·k;Samuel;STKPE
+11;23.02.2020;09:30;;;;;;60;60 m prek·ûok [68,6 cm] MiniprÌpravka-chlapci 01;;On line system .s.r.o.
+;;;8;0;äuhajda;Leo;ASHBA
+;;;2;0;Pauko;Jakub;ACMAL
+;;;7;0;äimek;Erik Alexander;ACMAL
+;;;1;0;äindel·r;Samuel;ASHBA
+;;;3;0;Michalko;Samuel;AKRPE
+;;;5;0;Hal·s;Radoslav;AKLZM
+;;;6;0;Novota;Matej;AKLZM
+;;;4;0;Gadomsk˝;Tom·ö;AKRPE
+12;23.02.2020;09:30;;;;;;60;60 m prek·ûok [68,6 cm] MiniprÌpravka-chlapci 02;;On line system .s.r.o.
+;;;5;0;»ervenka;Dominik;ASHBA
+;;;4;0;»ahoj;Daniel;SLATN
+;;;6;0;Just;J·n;ASHBA
+;;;3;0;Chovanec;Oliver;ASHBA
+;;;2;0;Nyeky;Daniel;AKRPE
+;;;0;0;Hanuöiak;Michal;NASAA
+13;23.02.2020;10:00;;;;;;60;60 m PrÌpravka-dievËata Beh;;On line system .s.r.o.
+;;;0;0;Cvikov·;Alexandra;BKHNB
+;;;0;0;Velecka;Karolina;BKHNB
+;;;0;0;Psotn·;Eliöka;SLATN
+;;;0;0;äuranov·;Ella;UKBLA
+;;;0;0;Koûuchov·;Tamara;ACMAL
+;;;0;0;Karvai;KarolÌna;ASHBA
+;;;0;0;Zemanov·;KarolÌna;AKLZM
+;;;0;0;SalÌni;Adela;AKLZM
+;;;0;0;Kozolkov·;Melissa;AKLZM
+;;;0;0;äuhajdov·;Lujza;ASHBA
+;;;0;0;Pag·Ëov·;Alûbeta;ACMAL
+;;;0;0;Steiger;Emma;NASAA
+;;;0;0;KæuË·rov·;Tereza;STKPE
+;;;0;0;Markov·;Miroslava;STKPE
+;;;0;0;Bielikov·;Anna;AKLZM
+;;;0;0;De Roche;Manay;MEGDS
+;;;0;0;Fornadeæov·;Nina;AKRPE
+;;;0;0;äiökov·;LÌvia;AKRPE
+;;;0;0;Staökov·;Nela;ACMAL
+;;;0;0;Letkov·;MagdalÈna;INTER
+;;;0;0;Jalaköov·;Ema;LESKY
+;;;0;0;PrÌkopsk·;Lucia;LESKY
+;;;0;0;Gondov·;Nat·lia;NASAA
+;;;0;0;Hol·skov·;Simona;AKRPE
+;;;0;0;Ondr·öekov·;Hana;AKRPE
+;;;0;0;MÈsz·rosov·;Liliana;AKRPE
+;;;0;0;Masarykov·;ViktÛria;AKLZM
+;;;0;0;Antal;Emma;MEGDS
+14;23.02.2020;10:10;;;;;;60;60 m MiniprÌpravka-dievËat· Beh;;On line system .s.r.o.
+;;;0;0;Mamuti;Zainab;BKHNB
+;;;0;0;KadleËÌkov·;Lilly;AKRPE
+;;;0;0;Steiger;Sofia;NASAA
+;;;0;0;SeËk·rov·;Alexandra;AKLZM
+;;;0;0;Kr·lov·;Simona;ASHBA
+;;;0;0;Ondr·öekov·;T·Úa;AKRPE
+;;;0;0;Tankov·;Tiffany;AKRPE
+;;;0;0;Habov·;Marianna;ACMAL
+;;;0;0;Habov·;Romana;ACMAL
+;;;0;0;äiökov·;Adela;AKRPE
+;;;0;0;äurganov·;Marcela;AKRPE
+;;;0;0;Pleschov·;Lucia;ASHBA
+;;;0;0;Vanekov·;Adela;ACMAL
+;;;0;0;Polohov·;Daniela;LESKY
+15;23.02.2020;10:20;;;;;;60;60 m PrÌpravka-chlapci Beh;;On line system .s.r.o.
+;;;0;0;Sal·k;Daniel;ASHBA
+;;;0;0;Fut·s;Maxim;ASHBA
+;;;0;0;»ahoj;Gabriel;SLATN
+;;;0;0;Dubina;Adam;ASHBA
+;;;0;0;Mikl·ö;Niko;AKRPE
+;;;0;0;SuËko;Tom·ö;AKLZM
+;;;0;0;KrajËoviË;Leonard;AKLZM
+;;;0;0;Michalko;Dominik;AKRPE
+;;;0;0;SeËk·r;Samuel;AKLZM
+;;;0;0;Mr·z;Richard;ACMAL
+;;;0;0;Horv·th;Theodor;AKPSC
+;;;0;0;BalaûoviË;Gabriel;LESKY
+;;;0;0;Posztos;Istv·n;MEGDS
+;;;0;0;Gibson;Alexander Paul;AKRPE
+;;;0;0;Iöunin;Marek;ACMAL
+;;;0;0;Singhoffer;Tobias;STKPE
+;;;0;0;Findor;Milan;ASHBA
+;;;0;0;Haba;Kriötof;ACMAL
+;;;0;0;Rusn·k;Samuel;STKPE
+;;;0;0;Paufler;Damian;AKPSC
+;;;0;0;StrapoÚ;Daniel;ASHBA
+;;;0;0;äindel·r;äimon;ASHBA
+;;;0;0;Bruckmayer;Tom·ö;LESKY
+;;;0;0;Vesel˝;Alexander;ACMAL
+;;;0;0;RÈvay;äimon;NASAA
+;;;0;0;Sklen·r;Luk·ö;AKRPE
+;;;0;0;JovankoviË;Sebastian Manuel;ASHBA
+;;;0;0;Znamen·Ëek;Marek;AKRPE
+;;;0;0;Tietz;Patrik;AKRPE
+;;;0;0;Talian;Branislav;SLATN
+;;;0;0;Baranyai;Viktor;MEGDS
+;;;0;0;Samsely;Stanislav;BKHNB
+16;23.02.2020;10:30;;;;;;60;60 m MiniprÌpravka-chlapci Beh;;On line system .s.r.o.
+;;;0;0;Pauko;Jakub;ACMAL
+;;;0;0;äuhajda;Leo;ASHBA
+;;;0;0;äimek;Erik Alexander;ACMAL
+;;;0;0;äindel·r;Samuel;ASHBA
+;;;0;0;»ervenka;Dominik;ASHBA
+;;;0;0;»ahoj;Daniel;SLATN
+;;;0;0;Hal·s;Radoslav;AKLZM
+;;;0;0;Novota;Matej;AKLZM
+;;;0;0;Just;J·n;ASHBA
+;;;0;0;Chovanec;Oliver;ASHBA
+;;;0;0;Michalko;Samuel;AKRPE
+;;;0;0;Nyeky;Daniel;AKRPE
+;;;0;0;Gadomsk˝;Tom·ö;AKRPE
+;;;0;0;Hanuöiak;Michal;NASAA
+;;;0;0;Martak;Samuel;BKHNB
+17;23.02.2020;10:40;;;;;;60;60 m prek·ûok [76,2cm-8,20m] Staröie ûiaËky;;On line system .s.r.o.
+;;;0;0;MichaloviËov·;Timea;ACMAL
+;;;0;0;Slez·kov·;Rebecca;ACMAL
+;;;0;0;Sabov·;KristÌna;ACMAL
+;;;0;0;Ufn·rov·;Michaela;NASAA
+18;23.02.2020;10:42;;;;;;60;60 m prek·ûok [76,2cm-7,50m] Mladöie ûiaËky;;On line system .s.r.o.
+;;;0;0;Petr·öov·;Nikola;ACMAL
+;;;0;0;Habov·;Vanda;ACMAL
+;;;0;0;Sedl·kov·;Laura;ACMAL
+;;;0;0;Z·lesÚ·kov·;Hana;ACMAL
+;;;0;0;Pullmannov·;Silvia;ACMAL
+;;;0;0;MoravËÌkov·;Martina;ACMAL
+;;;0;0;Kelemenov·;Vivienne;LESKY
+19;23.02.2020;10:44;;;;;;60;60 m prek·ûok [68,6 cm] Najmladöie ûiaËky;;On line system .s.r.o.
+;;;0;0;Valiöov·;Lucia;UKBLA
+;;;0;0;»aladikov·;Diana;AKLZM
+;;;0;0;Slez·kov·;Regina;ACMAL
+;;;0;0;Kov·Ëikov·;Michaela;ACMAL
+;;;0;0;Paukov·;ViktÛria;ACMAL
+;;;0;0;Paukov·;Lea;ACMAL
+;;;0;0;Mr·zov·;Andrea;ACMAL
+21;23.02.2020;10:45;;;;;;60;60 m prek·ûok [83,8 cm] StaröÌ ûiaci;;On line system .s.r.o.
+;;;0;0;Jan·Ë;Timotej Filip;NASAA
+;;;0;0;Gaöpar;Adam;ACMAL
+;;;0;0;KottlÌk;Peter;ACMAL
+;;;0;0;Houndjo;Eric;ACMAL
+20;23.02.2020;10:45;;;;;;60;60 m prek·ûok [83,8 cm] Dorastenci;;On line system .s.r.o.
+;;;0;0;Sedl·k;Ivan;ACMAL
+;;;0;0;GazdiË;Nicolas;ACMAL
+22;23.02.2020;10:48;;;;;;60;60 m prek·ûok [76,2cm-7,50m] MladöÌ ûiaci;;On line system .s.r.o.
+;;;0;0;MÏöùan;Tom·ö;ACMAL
+;;;0;0;äoÛö;Patrik;ACMAL
+;;;0;0;BoökoviË;Adam;ACMAL
+;;;0;0;œuriö;Martin;NASAA
+;;;0;0;Houndjo;Alex;ACMAL
+23;23.02.2020;10:50;;;;;;60;60 m prek·ûok [68,6 cm] NajmladöÌ ûiaci;;On line system .s.r.o.
+;;;0;0;VaneËko;Jakub;NASAA
+;;;0;0;MichaloviË;Matias;ACMAL
+;;;0;0;Hlav·Ë;Juraj;ACMAL
+;;;0;0;Petro;Maximili·n;NASAA
+;;;0;0;Haraslin;Martin;NASAA
+24;23.02.2020;11:00;;;;;;60;60 m Dorastenky Beh;;On line system .s.r.o.
+;;;0;0;»ederlov·;Ela;NASAA
+25;23.02.2020;11:00;;;;;;60;60 m Staröie ûiaËky;;On line system .s.r.o.
+;;;0;0;KrajËoviËov·;Zuzana;NASAA
+;;;0;0;Sabov·;KristÌna;ACMAL
+;;;0;0;GrÌgelov·;Karen;ACMAL
+;;;0;0;Kudlicska;Lilli;ASHBA
+;;;0;0;Slez·kov·;Rebecca;ACMAL
+;;;0;0;Rycht·rikov·;Anna;AKRPE
+;;;0;0;Bal·ûov·;Nina;ASHBA
+;;;0;0;Feglov·;KarolÌna;NASAA
+;;;0;0;MichaloviËov·;Timea;ACMAL
+;;;0;0;MikuliËkov·;Ina;NASAA
+;;;0;0;Kandr·Ëov·;Eliöka;STUBA
+;;;0;0;Boömansk·;Simona;AKRPE
+26;23.02.2020;11:10;;;;;;60;60 m Mladöie ûiaËky;;On line system .s.r.o.
+;;;0;0;Sedl·kov·;Laura;ACMAL
+;;;0;0;Glembov·;Kl·ra;AKRPE
+;;;0;0;Rycht·rikov·;Dorota;AKRPE
+;;;0;0;MÈryov·;Nela;ASHBA
+;;;0;0;Z·lesÚ·kov·;Hana;ACMAL
+;;;0;0;MoravËÌkov·;Martina;ACMAL
+;;;0;0;Ps·rsky;Nicole;ASHBA
+;;;0;0;Fialov·;Lenka;AKPSC
+;;;0;0;Pullmannov·;Silvia;ACMAL
+;;;0;0;KrajËoviËov·;Bibiana;ASHBA
+;;;0;0;Blich·rov·;Ela;ASHBA
+;;;0;0;äturdÌkov·;Zuzana;ASHBA
+;;;0;0;Jean-Jean;Ema OlÌvia;ASHBA
+;;;0;0;Habov·;Vanda;ACMAL
+;;;0;0;Habov·;Izabela;ACMAL
+;;;0;0;Bertokov·;Barbora;LESKY
+;;;0;0;Sol·rov·;Veronika;INTER
+;;;0;0;Kopoldov·;Tara;ASHBA
+;;;0;0;Kelemenov·;Vivienne;LESKY
+;;;0;0;Meökov·;Petra;LESKY
+;;;0;0;Kr·likov·;Michaela;NASAA
+;;;0;0;Petr·öov·;Nikola;ACMAL
+;;;0;0;äegitov·;Nelka;AKPSC
+;;;0;0;HalenkoviËov·;KristÌna;AKPSC
+;;;0;0;Mokriöova;Sofia;AKPSC
+;;;0;0;Sikorjakov·;Selena - Daniela;AKPSC
+;;;0;0;BaËov·;KarolÌna;ASHBA
+;;;0;0;Tringelov·;Tamara;AKPSC
+27;23.02.2020;11:15;;;;;;60;60 m Najmladöie ûiaËky;;On line system .s.r.o.
+;;;0;0;Just;Jana KarolÌna;ASHBA
+;;;0;0;Paukov·;Lea;ACMAL
+;;;0;0;Pelik·nov·;Lara;AKRPE
+;;;0;0;»iËmancov·;Ela;ASHBA
+;;;0;0;Mikl·öov·;Mel·nia;AKRPE
+;;;0;0;Rycht·rikov·;Tereza;AKRPE
+;;;0;0;RojÌkov·;MargarÈta;ASHBA
+;;;0;0;Al-ANsari;Adriana;AKPSC
+;;;0;0;Raticov·;Nat·lia;ASHBA
+;;;0;0;KÚaûekov·;Tereza;ASHBA
+;;;0;0;Mikl·nkov·;Johanka;ASHBA
+;;;0;0;»aladikov·;Diana;AKLZM
+;;;0;0;Babiakov·;PatrÌcia;AKLZM
+;;;0;0;Mr·zov·;Andrea;ACMAL
+;;;0;0;Paukov·;ViktÛria;ACMAL
+;;;0;0;Kondapaneni;Silvia;ASHBA
+;;;0;0;Kov·Ëikov·;Michaela;ACMAL
+;;;0;0;Sal·kov·;Michaela;ASHBA
+;;;0;0;Schultz;Isabela;LESKY
+;;;0;0;Csanyiova;Veronika;AKPSC
+;;;0;0;Stachov·;Alexandra;LESKY
+;;;0;0;VÈghov·;Lara;MEGDS
+;;;0;0;Balnov·;Nataöa;ASHBA
+;;;0;0;Markov·;Ema;STKPE
+;;;0;0;JankoviËov·;Silvia;AKRPE
+;;;0;0;Kov·Ëov·;OlÌvia;ACMAL
+;;;0;0;äturdÌkov·;Hana;ASHBA
+;;;0;0;Kalaberov·;Nela;AKRPE
+;;;0;0;Durasov·;Michaela;ASHBA
+;;;0;0;MelÌökov·;Michaela Nelly;ASHBA
+;;;0;0;Valiöov·;Lucia;UKBLA
+;;;0;0;Slez·kov·;Regina;ACMAL
+;;;0;0;Bukvov·;Martina;AKLZM
+29;23.02.2020;11:20;;;;;;60;60 m StaröÌ ûiaci;;On line system .s.r.o.
+;;;0;0;Z·hor·k;Michal;AKPSC
+;;;0;0;Cich;Dominik;AKPSC
+;;;0;0;Jan·Ë;Timotej Filip;NASAA
+;;;0;0;Gaöpar;Adam;ACMAL
+;;;0;0;PetrezsÈl;RenÈ;ASHBA
+;;;0;0;KottlÌk;Peter;ACMAL
+;;;0;0;Houndjo;Eric;ACMAL
+;;;0;0;Z·hor·k;Patrik;AKPSC
+28;23.02.2020;11:20;;;;;;60;60 m Dorastenci;;On line system .s.r.o.
+;;;0;0;Hudec;Daniel;ASHBA
+;;;0;0;Sedl·k;Ivan;ACMAL
+;;;0;0;äut˝;ätefan;NASAA
+;;;0;0;GazdiË;Nicolas;ACMAL
+30;23.02.2020;11:30;;;;;;60;60 m MladöÌ ûiaci;;On line system .s.r.o.
+;;;0;0;œuriö;Martin;NASAA
+;;;0;0;BoökoviË;Adam;ACMAL
+;;;0;0;VotËenikov;Michal;ASHBA
+;;;0;0;äoÛö;Patrik;ACMAL
+;;;0;0;KrajËÌk;Michal;ASHBA
+;;;0;0;PistovË·k;Martin;INTER
+;;;0;0;Bob·k;Teodor;INTER
+;;;0;0;Druga;Martin;AKPSC
+;;;0;0;Houndjo;Alex;ACMAL
+;;;0;0;MÏöùan;Tom·ö;ACMAL
+;;;0;0;BulavËiak;Dami·n;AKPSC
+;;;0;0;Volek;Teodor;ACMAL
+31;23.02.2020;11:32;;;;;;60;60 m NajmladöÌ ûiaci;;On line system .s.r.o.
+;;;0;0;Greguö;Ladislav;AKLZM
+;;;0;0;Hlav·Ë;Juraj;ACMAL
+;;;0;0;MÈry;Maroö;ASHBA
+;;;0;0;Petro;Maximili·n;NASAA
+;;;0;0;Haraslin;Martin;NASAA
+;;;0;0;Benn·r;Samuel;AKLZM
+;;;0;0;Marù·k;Dominik;BKHNB
+;;;0;0;…del;Norbert;MEGDS
+;;;0;0;Streöka;Filip;AKRPE
+;;;0;0;Korba;Aurel;ASHBA
+;;;0;0;Glemba;Eduard;AKRPE
+;;;0;0;Kr·lik;Marian;ASHBA
+;;;0;0;BÌrÛ;Szebaszti·n;MEGDS
+;;;0;0;Danovsk˝;David;ASHBA
+;;;0;0;J·ny;Leo;ASHBA
+;;;0;0;Milo;Jakub;BKHNB
+;;;0;0;Kleötinec;Tom·ö;AKRPE
+;;;0;0;Kopold;Leo;ASHBA
+;;;0;0;Igenyes;Lucas;LESKY
+;;;0;0;MichaloviË;Matias;ACMAL
+;;;0;0;Kuric;Martin;AKPSC
+;;;0;0;Rusn·k;Matias;ASHBA
+;;;0;0;Danter;Alex;AKPSC
+;;;0;0;VaneËko;Jakub;NASAA
+;;;0;0;GurËÌk;Kristi·n;AKPSC
+32;23.02.2020;11:35;;;;;;60;60 m prek·ûok [76,2cm-8,20m] Staröie ûiaËky Fin·le;;On line system .s.r.o.
+33;23.02.2020;11:40;;;;;;60;60 m prek·ûok [76,2cm-7,50m] Mladöie ûiaËky Fin·le;;On line system .s.r.o.
+34;23.02.2020;11:42;;;;;;60;60 m prek·ûok [68,6 cm] Najmladöie ûiaËky Fin·le;;On line system .s.r.o.
+35;23.02.2020;11:45;;;;;;60;60 m prek·ûok [83,8 cm] Dorastenci Fin·le;;On line system .s.r.o.
+36;23.02.2020;11:45;;;;;;60;60 m prek·ûok [83,8 cm] StaröÌ ûiaci Fin·le;;On line system .s.r.o.
+37;23.02.2020;11:48;;;;;;60;60 m prek·ûok [76,2cm-7,50m] MladöÌ ûiaci Fin·le;;On line system .s.r.o.
+;;;0;0;Volek;Teodor;ACMAL
+38;23.02.2020;11:50;;;;;;60;60 m prek·ûok [68,6 cm] NajmladöÌ ûiaci Fin·le;;On line system .s.r.o.
+39;23.02.2020;12:00;;;;;;60;60 m Staröie ûiaËky Fin·le;;On line system .s.r.o.
+40;23.02.2020;12:05;;;;;;60;60 m Mladöie ûiaËky Fin·le;;On line system .s.r.o.
+41;23.02.2020;12:10;;;;;;60;60 m Najmladöie ûiaËky Fin·le;;On line system .s.r.o.
+42;23.02.2020;12:15;;;;;;60;60 m Dorastenci Fin·le;;On line system .s.r.o.
+43;23.02.2020;12:15;;;;;;60;60 m StaröÌ ûiaci Fin·le;;On line system .s.r.o.
+44;23.02.2020;12:20;;;;;;60;60 m MladöÌ ûiaci Fin·le;;On line system .s.r.o.
+45;23.02.2020;12:25;;;;;;60;60 m NajmladöÌ ûiaci Fin·le;;On line system .s.r.o.

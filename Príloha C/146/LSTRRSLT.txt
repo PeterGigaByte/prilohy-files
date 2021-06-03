@@ -1,0 +1,2 @@
+"Event";"Round";"Heat";"Date";"Hour";"Wind";"Temp";"File";"Official"
+   0;   0;  52;"   26.05.2019";" 10:02:04.2058";"       N/A";"       N/A";" ";"Official";

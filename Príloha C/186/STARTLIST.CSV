@@ -1,0 +1,117 @@
+Event Code;Date;Time;Lane/order;Bib No;;;;;;;
+1;17.03.2019;08:00;;;;;;100;100 m Muži Beh 01;;On line system .s.r.o.
+;;;1;0;Sentivan;Marko;ABCHU
+;;;7;0;Petrovèin;Adrián;ABCHU
+;;;8;0;Petrovèin;Dominik;ABCHU
+;;;2;0;Petrik;Adam;ABCHU
+;;;6;0;Matta;Miroslav;ABCHU
+;;;3;0;Makovec;Petr;ABCHU
+;;;5;0;Kaláb;Oskar;ABCHU
+;;;4;0;Goga;Gregor;ABCHU
+2;17.03.2019;08:00;;;;;;100;100 m Muži Beh 02;;On line system .s.r.o.
+;;;7;0;Goga;Martin;ABCHU
+;;;6;0;Fitèák;René;ABCHU
+;;;3;0;Firda;Teo;ABCHU
+;;;5;0;Dzák;Oliver;ABCHU
+;;;4;0;Bocko;Adrián;ABCHU
+;;;8;0;Sokoloviè;Lukáš;ABCHU
+;;;1;0;Žužo;Oliver;ABCHU
+;;;2;0;Gašpar;Adam;ACMAL
+3;17.03.2019;08:00;;;;;;100;100 m Muži Beh 03;;On line system .s.r.o.
+;;;1;0;Haba;Artur;ACMAL
+;;;8;0;Gradzki;Michal;ACMAL
+;;;7;0;Gazdiè;Nicolas;ACMAL
+;;;2;0;Gašpar;Samuel;ACMAL
+;;;4;0;Ïuriš;René;ACMAL
+;;;6;0;Gajarský;Filip;ACMAL
+;;;3;0;Franko;Sebastián;ACMAL
+;;;5;0;Ferenèík;Dávid;ACMAL
+4;17.03.2019;08:00;;;;;;100;100 m Muži Beh 04;;On line system .s.r.o.
+;;;5;0;Feranec;Dennis Alexej;ACMAL
+;;;4;0;Elšík;Jakub;ACMAL
+;;;6;0;Haba;Milan;ACMAL
+;;;3;0;Galoviè;Jakub;ACMAL
+;;;2;0;Haba;Krištof;ACMAL
+;;;1;0;Hoc;Rastislav;ACMAL
+;;;7;0;Haberland;Juraj;ACMAL
+;;;8;0;Halla;Michael;ACMAL
+5;17.03.2019;08:00;;;;;;100;100 m Muži Beh 05;;On line system .s.r.o.
+;;;4;0;Halla;Philip;ACMAL
+;;;5;0;Handl;Vladimír;ACMAL
+;;;3;0;Handl;Michal;ACMAL
+;;;6;0;Hanisko;Rastislav;ACMAL
+;;;2;0;Harák;Šimon;ACMAL
+;;;7;0;Haramia;Patrik;ACMAL
+;;;8;0;Haramia;Rastislav;ACMAL
+;;;1;0;Havlík;Michal;ACMAL
+6;17.03.2019;08:00;;;;;;100;100 m Muži Beh 06;;On line system .s.r.o.
+;;;7;0;Havlík;Juraj;ACMAL
+;;;8;0;Havlík;Marek;ACMAL
+;;;1;0;Hlaváè;Juraj;ACMAL
+;;;6;0;Dulák;Maxim;ACMAL
+;;;2;0;Haberland;Marek;ACMAL
+;;;3;0;Drahoš;Alex;ACMAL
+;;;4;0;Biesik;Peter;ACMAL
+;;;5;0;Dóka;Lukáš;ACMAL
+7;17.03.2019;08:00;;;;;;100;100 m Muži Beh 07;;On line system .s.r.o.
+;;;1;0;Holka;Tomáš;ACMAL
+;;;4;0;Albert;Adam;ACMAL
+;;;5;0;Andil;Michal;ACMAL
+;;;3;0;Antala;Martin;ACMAL
+;;;6;0;Babe¾a;Dominik;ACMAL
+;;;2;0;Babe¾a;Adam;ACMAL
+;;;7;0;Baèek;Patrik;ACMAL
+;;;8;0;Baèekl;Samuel;ACMAL
+8;17.03.2019;08:00;;;;;;100;100 m Muži Beh 08;;On line system .s.r.o.
+;;;4;0;Bachratý;Matúš;ACMAL
+;;;5;0;Balog;Kristián;ACMAL
+;;;3;0;Barièiak;Dominik;ACMAL
+;;;6;0;Belica;Boris;ACMAL
+;;;2;0;Beòa;Ján;ACMAL
+;;;7;0;Benèiè;Sebastián;ACMAL
+;;;8;0;Benedik;Pavol;ACMAL
+;;;1;0;Benka;Richard;ACMAL
+9;17.03.2019;08:00;;;;;;100;100 m Muži Beh 09;;On line system .s.r.o.
+;;;4;0;Benko Williams;Alex;ACMAL
+;;;5;0;Binèík;Peter;ACMAL
+;;;3;0;Bogdalík;Daniel;ACMAL
+;;;6;0;Boškoviè;Adam;ACMAL
+;;;2;0;Brezina;Matej;ACMAL
+;;;7;0;Cocher;Radovan;ACMAL
+;;;8;0;Èermák;Jakub;ACMAL
+;;;1;0;Èerný;Patrik;ACMAL
+10;17.03.2019;08:00;;;;;;100;100 m Muži Beh 10;;On line system .s.r.o.
+;;;4;0;Èerný;Jakub;ACMAL
+;;;5;0;Èerný;Filip;ACMAL
+;;;3;0;Èervenka;Dávid;ACMAL
+;;;6;0;Danihel;Daniel;ACMAL
+;;;2;0;Dibarbora;Eduard;ACMAL
+;;;7;0;Dorocák;Richard;ACMAL
+;;;8;0;Hollý;Peter;ACMAL
+11;17.03.2019;08:00;;;;;;100;100 m Muži Beh 11;;On line system .s.r.o.
+12;17.03.2019;08:10;;;;;;200;200 m Muži Beh;;On line system .s.r.o.
+;;;2;0;Albert;Adam;ACMAL
+;;;3;0;Andil;Michal;ACMAL
+;;;1;0;Antala;Martin;ACMAL
+;;;4;0;Babe¾a;Dominik;ACMAL
+13;17.03.2019;10:00;;;;;;60;60 m Muži Beh 01;;On line system .s.r.o.
+;;;4;0;Bocko;Adrián;ABCHU
+;;;3;0;Firda;Teo;ABCHU
+;;;5;0;Dzák;Oliver;ABCHU
+;;;6;0;Kaláb;Oskar;ABCHU
+;;;2;0;Makovec;Petr;ABCHU
+;;;7;0;Petrik;Adam;ABCHU
+;;;8;0;Petrovèin;Dominik;ABCHU
+;;;1;0;Petrovèin;Adrián;ABCHU
+14;17.03.2019;10:00;;;;;;60;60 m Muži Beh 02;;On line system .s.r.o.
+;;;4;0;Sentivan;Marko;ABCHU
+;;;5;0;Sokoloviè;Lukáš;ABCHU
+15;17.03.2019;11:11;;;;;;600;600 m Muži Beh;;On line system .s.r.o.
+;;;4;0;Sentivan;Marko;ABCHU
+;;;1;0;Goga;Gregor;ABCHU
+;;;2;0;Fitèák;René;ABCHU
+;;;3;0;Sokoloviè;Lukáš;ABCHU
+;;;5;0;Dzák;Oliver;ABCHU
+;;;6;0;Bocko;Adrián;ABCHU
+;;;7;0;Kaláb;Oskar;ABCHU
+;;;8;0;Žužo;Oliver;ABCHU

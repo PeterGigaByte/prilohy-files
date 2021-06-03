@@ -1,0 +1,89 @@
+Event Code;Date;Time;Lane/order;Bib No;;;;;;;
+61;14.12.2019;03:00;;;;;;200;150 m Staröie ûiaËky Beh 07;;On line system .s.r.o.
+;;;3;0;Boömansk·;Simona;AKRPE
+;;;4;0;Gergeæov·;Ema;UKBLA
+;;;2;0;Voz·rov·;Lenka;KRYHA
+63;14.12.2019;03:10;;;;;;200;150 m Dorastenky Beh 03;;On line system .s.r.o.
+;;;3;0;KoneËn·;Veronika;VITAL
+;;;4;0;Lepotov·;Am·lia;UKBLA
+;;;2;0;Lupt·kov·;KristÌna;STUKE
+44;14.12.2019;03:15;;;;;;200;150 m Juniorky Beh 01;;On line system .s.r.o.
+;;;2;8;KudlÌkov·;Dana;ZTSDU
+;;;4;7;Kou¯ilov·;SoÚa;MSBRNO
+;;;3;6;Dobrovoln·;Andrea;MSBRNO
+64;14.12.2019;03:15;;;;;;200;150 m Juniorky Beh 02;;On line system .s.r.o.
+;;;4;9;Suranov·;Karin;ZTSDU
+;;;2;10;Z·potoËn·;Sophia;ZTSDU
+;;;3;0;Dankov·;Petra;ACSNR
+45;14.12.2019;03:20;;;;;;200;150 m StaröÌ ûiaci Beh 01;;On line system .s.r.o.
+;;;3;0;»ery;Mat˙ö;ACSNR
+;;;4;0;TÛth;Gergı;ACNZA
+;;;1;0;Fuksa;Miroslav;SLATN
+;;;2;19;çarcha;Marko;AOPKE
+65;14.12.2019;03:20;;;;;;200;150 m StaröÌ ûiaci Beh 02;;On line system .s.r.o.
+;;;2;0;Mur·nsky;Milan;ACNZA
+;;;3;0;Basoö;Martin;HACHU
+;;;1;0;Nehyba;Michal;ACMAL
+;;;4;0;Hnatko;Richard;SSKBJ
+66;14.12.2019;03:20;;;;;;200;150 m StaröÌ ûiaci Beh 03;;On line system .s.r.o.
+;;;2;0;Samuel;Sebastian;ACNZA
+;;;4;0;Bug·r;Andrej;STUBA
+;;;3;0;Sedl·k;Ivan;ACMAL
+;;;1;0;Uhl·r;J˙lius;SKCMI
+67;14.12.2019;03:20;;;;;;200;150 m StaröÌ ûiaci Beh 04;;On line system .s.r.o.
+;;;2;0;Balogh;Mari·n;ACNZA
+;;;1;0;äut˝;ätefan;NASAA
+;;;3;15;Dzub·k;Matej;SSKBJ
+;;;4;0;TokarËÌk;Michal;SSKBJ
+68;14.12.2019;03:20;;;;;;200;150 m StaröÌ ûiaci Beh 05;;On line system .s.r.o.
+;;;4;0;äpacÌr;Nicolas;STUBA
+;;;1;0;Lovaö;Martin;SKCMI
+;;;2;0;Ondis;äimon;SSKBJ
+;;;3;0;HamöÌk;V·clav;SAKZDL
+69;14.12.2019;03:20;;;;;;200;150 m StaröÌ ûiaci Beh 06;;On line system .s.r.o.
+;;;4;0;Marti;Luk·ö;ACNZA
+;;;1;0;Puha;Bal·zs;ACNZA
+;;;3;13;Andi;Martin;ACNZA
+;;;2;17;Novotn˝;Oliver;ZTSDU
+70;14.12.2019;03:20;;;;;;200;150 m StaröÌ ûiaci Beh 07;;On line system .s.r.o.
+;;;1;16;KudlÌk;Matej;ZTSDU
+;;;2;0;Fr˝valdsk˝;Miroslav;ACMAL
+;;;3;0;Babjak;Martin;SKCMI
+;;;4;0;Fajner;Maroö;SKCMI
+71;14.12.2019;03:20;;;;;;200;150 m StaröÌ ûiaci Beh 08;;On line system .s.r.o.
+;;;3;0;Lovaö;Adam;SKCMI
+;;;4;0;äima;Samuel;SSKBJ
+;;;2;0;äkod·k;Filip;OLYGA
+46;14.12.2019;03:33;;;;;;200;150 m Dorastenci Beh 01;;On line system .s.r.o.
+;;;3;0;éiaËik;Andrej;ACNZA
+;;;2;26;KoneËn˝;Jon·ö;MSBRNO
+;;;4;21;Hartmann;Jakub;MSBRNO
+;;;1;25;K¯iv·nek;Frantiöek;MSBRNO
+72;14.12.2019;03:33;;;;;;200;150 m Dorastenci Beh 02;;On line system .s.r.o.
+;;;3;0;Basoö;Marco;HACHU
+;;;2;23;Pohanka;Martin;MSBRNO
+;;;4;0;»erm·k;Marek;MSBRNO
+;;;1;22;Koöù·l;Jakub;MSBRNO
+73;14.12.2019;03:33;;;;;;200;150 m Dorastenci Beh 03;;On line system .s.r.o.
+;;;2;0;OlenoËin;äimon;HACHU
+;;;1;0;Seko;Jakub;ACSNR
+;;;3;24;NÏmec;Ond¯ej;MSBRNO
+;;;4;0;Labuda;Dominik;ACSNR
+74;14.12.2019;03:33;;;;;;200;150 m Dorastenci Beh 04;;On line system .s.r.o.
+;;;2;0;Lop˙ch;Adam;ACSNR
+;;;1;0;SvoreÚ;Jakub Anton;ACSNR
+;;;4;0;Kromka;Samuel;VITAL
+;;;3;0;Drobn˝;Jakub;STUBA
+75;14.12.2019;03:33;;;;;;200;150 m Dorastenci Beh 05;;On line system .s.r.o.
+;;;4;42;Szarka;Gerg;ACNZA
+;;;2;30;TruchlÌk;Michal;ZTSDU
+;;;3;0;Nemec;Jakub;AOPKE
+47;14.12.2019;03:40;;;;;;200;150 m Juniori Beh 01;;On line system .s.r.o.
+;;;2;0;Dˆmˆtˆr;Patrik;OLYGA
+;;;4;33;Bugoö;Filip;ZTSDU
+;;;1;35;Labo;D·vid;ZTSDU
+;;;3;32;Gaszczyk;Petr;MSBRNO
+76;14.12.2019;03:40;;;;;;200;150 m Juniori Beh 02;;On line system .s.r.o.
+;;;2;0;Fabi·n;Martin;STUKE
+;;;4;0;Forrai;Kristi·n;STUKE
+;;;3;0;Megela;Patrik;HACHU
