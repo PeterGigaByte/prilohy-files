@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="sk" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link th:rel="icon"
+          th:href="@{/images/race.png}">
+    <link th:rel="stylesheet" th:href="@{/css/index.css}">
+    <link th:rel="stylesheet" th:href="@{/css/table.css}">
+    <link th:rel="stylesheet" th:href="@{/css/maxcdnBootstrap.css}">
+
+
+    <link rel="stylesheet" th:href="@{/css/resultsApplications.css}">
+    <script type="text/javascript" th:src="@{/js/ajaxJquerry.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jbox.js}"></script>
+    <link th:rel="stylesheet" th:href="@{/css/jbox.css}">
+
+    <link th:rel="stylesheet" th:href="@{/css/sideMenu.css}">
+    <link th:rel="stylesheet" th:href="@{/css/login.css}">
+    <script type="text/javascript" th:src="@{/js/login.js}"></script>
+
+
+
+
+</head>
+<body  style="background-color: #454a46">
+
+<div th:replace="~{fragments/navbar :: navigation}"> </div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/athletes">Pretekári</a>
+    <a href="/clubs">Kluby</a>
+    <a href="/contact">Kontakt</a>
+</div>
+
+<main th:id="main">
+    <div style="color: white" th:class="activeRace">
+        <h1>Prihlásenie</h1>
+        <h4>Pre prístup k iným sekciám ako divák, musíte byť prihlásený</h4>
+    </div>
+    <div th:class="heading_t">
+        <!-- aktivny pretek -->
+
+
+    </div>
+    <hr>
+    <div class="bg-img" >
+        <div class="wrapper ">
+            <div>
+                <form th:action="@{/login}" method="post" class="container">
+
+                    <div th:if="${param.error}"><div class="alert alert-danger"> Nesprávne meno alebo heslo</div>
+                    </div>
+
+                    <div th:if="${param.Logout}">
+                        <div class="alert alert-info">Boli ste odhlásený
+                        </div>
+                    </div>
+                    <h1>Prihlásenie</h1>
+
+                    <label for="username"><b>Používateľské meno</b></label>
+                    <input id="username" type="text" placeholder="Zadajte používateľské meno" name="username" required>
+
+                    <label for="password"><b>Heslo</b></label>
+                    <input id="password" type="password" placeholder="Zadajte používateľské heslo" name="password" required>
+                    Nie ste ešte zaregistrovaný? <a href="/register">Registrujte sa tu!</a>
+                    <button type="submit" class="btn">Prihlásiť</button>
+                </form>
+            </div>
+
+        </div>
+    </div>
+
+</main>
+<footer th:class="footer">
+    ©PeterRigoDevelopment
+</footer>
+
+<div th:id="overlay"></div>
+
+
+<script th:src="@{/js/sideMenu.js}"></script>
+<script th:src="@{/js/cookies.js}" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" th:href="@{/css/tables_new.css}"/>
+
+</body>
+</html>

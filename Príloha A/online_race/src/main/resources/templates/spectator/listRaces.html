@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="sk" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systém pre organizáciu Atl.Pretekov</title>
+    <link th:rel="icon"
+          th:href="@{/images/race.png}">
+    <link th:rel="stylesheet" th:href="@{/css/index.css}">
+
+
+    <link th:rel="stylesheet" th:href="@{/css/maxcdnBootstrap.css}">
+    <link th:rel="stylesheet" th:href="@{/css/sideMenu.css}">
+    <script th:src="@{/js/jquery-3.5.1.min.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/demo.css}"/>
+    <link rel="stylesheet" type="text/css" th:href="@{/dataTables/datatables.min.css}"/>
+    <script type="text/javascript" th:src="@{/dataTables/datatables.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/sorting-date-de.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jbox.js}"></script>
+    <link th:rel="stylesheet" th:href="@{/css/jbox.css}">
+
+    <script th:src="@{/js/registerRaceForm.js}"></script>
+    <script th:src="@{/js/sideMenu.js}"></script>
+    <script th:src="@{/js/spectator.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/tables_new.css}"/>
+
+
+</head>
+<body>
+
+<div th:replace="~{fragments/navbar :: navigation}"> </div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/athletes">Pretekári</a>
+    <a href="/clubs">Kluby</a>
+    <a href="/contact">Kontakt</a>
+</div>
+
+
+<!-- Use any element to open the sidenav -->
+<main th:id="main">
+    <div th:class="heading_t" style="width: 100%">
+        <div  >
+            <h1>Zoznam atletických podujatí</h1>
+        </div>
+    </div>
+    <hr>
+
+    <table  th:id="table">
+        <thead>
+        <tr th:id="first_tr" >
+            <th>Dátum</th>
+            <th>Názov</th>
+            <th>Miesto konania</th>
+            <th>Organizátor</th>
+            <th>Prihlášky</th>
+            <th>Výsledky</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+        <tr th:each="race: ${races}">
+            <td class="text-center" th:text="${race.returnStartDate()}"></td>
+            <td class="text-center" th:text="${race.raceName}"></td>
+            <td class="text-center" th:text="${race.place}"></td>
+            <td class="text-center" th:text="${race.organizer}"></td>
+            <td class="text-center" ><a th:href="@{races/app/{id}(id=${race.getId()})} "  ><img  style="width: 35px; height: 35px" alt="active" class="activatedButton" th:src="@{/images/Settings-icon.png}"></a></td>
+            <td class="text-center" ><a th:href="@{races/res/{id}(id=${race.getId()})} "  ><img  style="width: 35px; height: 35px" alt="active" class="activatedButton" th:src="@{/images/Settings-icon.png}"></a></td>
+        </tr>
+        </tbody>
+    </table>
+    <div style="height: 25px"></div>
+</main>
+
+<footer th:class="footer">
+    ©PeterRigoDevelopment
+</footer>
+<div th:id="overlay"></div>
+
+</body>
+</html>

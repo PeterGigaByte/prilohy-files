@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="sk" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Správa prístupu</title>
+    <link th:rel="stylesheet" th:href="@{/css/index.css}">
+    <link th:rel="icon" th:href="@{/images/race.png}">
+    <link th:rel="stylesheet" th:href="@{/css/maxcdnBootstrap.css}">
+    <link th:rel="stylesheet" th:href="@{/css/sideMenu.css}">
+    <script th:src="@{/js/jquery-3.5.1.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jbox.js}"></script>
+    <link th:rel="stylesheet" th:href="@{/css/jbox.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/dataTables/datatables.min.css}"/>
+    <script type="text/javascript" th:src="@{/dataTables/datatables.min.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/tables_new.css}"/>
+    <script th:src="@{/js/sideMenu.js}"></script>
+    <script type="text/javascript" th:src="@{/js/athleteDetail.js}"></script>
+
+
+
+</head>
+<body>
+
+<div th:replace="~{fragments/navbar :: navigation}"> </div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/athletes">Pretekári</a>
+    <a href="/clubs">Kluby</a>
+    <a href="/contact">Kontakt</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+
+<main th:id="main">
+    <div th:class="heading_t">
+        <!-- aktivny pretek -->
+        <div  th:class="addRace" style="width: 30%">
+            <a>
+                <label style="color: blue" th:class="div-button">
+                    <span th:text="${user.username}" style="font-size: 50px"></span>
+                </label>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4" >
+            <img alt="vyvojar" class="profilePicture" th:src="@{/images/foto.jpg}">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Aktuálny klub</label>
+            <span style="margin-left: 200px" th:text="${user.club?.clubName}"></span>
+        </div>
+        <div class="col-sm-5" >
+            <form  th:action="@{/roles/edit/{id}(id=${user.userId})}" th:object="${user}" method="post" autocomplete="off">
+                <input th:class="hidden" id="id" th:value="*{userId}" th:field="*{userId}" type="text" class="form-control" >
+                <input th:class="hidden" id="password" th:value="*{password}" th:field="*{password}" type="text" class="form-control" >
+                <div class="form-row" style="margin-top: 5px">
+                    <div class="form-group col-md-6">
+                        <label for="username">Používateľské meno</label>
+                        <input  th:field="*{username}" type="text" class="form-control" id="username" placeholder="Používateľské meno" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="email">Email</label>
+                        <input  th:field="*{email}" type="text" class="form-control" id="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group col-md-6">
+                        <label for="fullName"> Meno a priezvisko</label>
+                        <input th:field="*{fullName}" type="text" class="form-control" id="fullName" placeholder="Meno a priezvisko" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group col-md-6">
+                        <label for="club">Klub</label>
+                        <select class="input-box select-css" style="width: 200px" id="club" th:field="*{club}">
+                            <option th:value="${null}" >Žiadny</option>
+                            <option th:each="club : ${clubs}"
+                                    th:value="${club.id}"
+                                    th:text="${club.clubName}">Wireframe</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="activity">Aktivita</label>
+                    <input  id="activity" type="checkbox" name="myBooleanVariable" data-toggle="toggle" th:field="*{enabled}"/>
+
+
+
+                </div>
+                <div th:object="${roleCheck}" class="form-group col-md-6">
+                    <label for="activity">Supervisor</label>
+                    <input id="supervisor" type="checkbox" name="myBooleanVariable" th:field="*{supervisor}"/>
+                </div>
+                <div th:object="${roleCheck}" class="form-group col-md-6">
+                    <label for="activity">Registered</label>
+                    <input id="registered" type="checkbox" name="myBooleanVariable" th:field="*{registered}"/>
+                </div>
+                <div th:object="${roleCheck}" class="form-group col-md-6">
+                    <label for="activity">Admin</label>
+                    <input id="admin" type="checkbox" name="myBooleanVariable" th:field="*{admin}"/>
+                </div>
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Editovať</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <table th:id="tableResults">
+        <thead>
+        <tr>
+            <th colspan="5">
+                Roles
+            </th>
+        </tr>
+        <tr th:id="first_tr" >
+            <th>Rola</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="role: ${user.roles}" >
+            <td><span th:text="${role.name}"></span></td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer th:class="footer">
+    ©PeterRigoDevelopment
+</footer>
+<div th:id="overlay"></div>
+
+
+</body>
+</html>

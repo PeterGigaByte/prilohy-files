@@ -1,0 +1,27 @@
+Event Code;Date;Time;Lane/order;Bib No
+1;13.3.2021;15:00;;;;;;40;40 m Muži Beh 1;;Peter Rigo
+;;;5;1;Rigo;Peter;PK
+;;;7;2;Rano;Peter;PK
+;;;4;25;Elor;Martin;PK
+;;;3;35;Popel;Jan;PK
+;;;6;3;Frana;Jano;PK
+2;13.3.2021;20:00;;;;;;100;100 m Muži Beh 2;;Peter Rigo
+;;;3;1;Rigo;Peter;PK
+;;;5;2;Rano;Peter;PK
+;;;6;3;Frana;Jano;PK
+;;;7;25;Elor;Martin;PK
+;;;4;35;Popel;Jan;PK
+3;13.3.2021;23:00;;;;;;100;100 m Ženy Finále 1;;Peter Rigo
+;;;4;1;Rigo;Peter;PK
+;;;5;2;Rano;Peter;PK
+;;;3;3;Frana;Jano;PK
+4;13.3.2021;23:20;;;;;;1500;1500 m Muži Beh 1;;Peter Rigo
+;;;1;1;Rigo;Peter;PK
+;;;2;3;Frana;Jano;PK
+;;;3;2;Rano;Peter;PK
+;;;4;25;Elor;Martin;PK
+;;;5;35;Popel;Jan;PK
+;;;6;8;Richter;Erik;EK
+;;;7;44;Tran;Matej;EK
+;;;8;222;Chyba;Erik;EK
+;;;9;6;Peter;Vajda;EK

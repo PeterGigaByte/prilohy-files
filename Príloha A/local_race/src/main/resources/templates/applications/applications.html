@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="sk" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prihlášky</title>
+    <link th:rel="icon" th:href="@{/images/race.png}">
+    <link th:rel="stylesheet" th:href="@{/css/index.css}">
+    <link th:rel="stylesheet" th:href="@{/css/table.css}">
+    <link th:rel="stylesheet" th:href="@{/css/maxcdnBootstrap.css}">
+
+
+    <link rel="stylesheet" th:href="@{/css/resultsApplications.css}">
+    <script type="text/javascript" th:src="@{/js/ajaxJquerry.js}"></script>
+
+    <link th:rel="stylesheet" th:href="@{/css/sideMenu.css}">
+    <script type="text/javascript" th:src="@{/js/jbox.js}"></script>
+    <link th:rel="stylesheet" th:href="@{/css/jbox.css}">
+
+    <link rel="stylesheet" type="text/css" th:href="@{/dataTables/datatables.min.css}"/>
+    <script type="text/javascript" th:src="@{/dataTables/datatables.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/euTime.js}"></script>
+    <script type="text/javascript" th:src="@{/js/tableToJsonRow.js}"></script>
+    <script type="text/javascript" th:src="@{/js/tableToJsonCell.js}"></script>
+    <script type="text/javascript" th:src="@{/js/tableToJson.js}"></script>
+    <script type="text/javascript" th:src="@{/js/inlineEditor.js}"></script>
+
+
+
+</head>
+<body>
+
+<div th:replace="~{fragments/navbar :: navigation}"> </div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/athletes">Pretekári</a>
+    <a href="/clubs">Kluby</a>
+    <a href="/databases">Stiahnuť databázu</a>
+    <a href="/contact">Kontakt</a>
+</div>
+
+<main th:id="main">
+
+    <div th:class="activeRace">
+        <a >
+            <span class="hidden" th:if="${activeRace.id!=null}">
+                <span th:id="raceId" th:text="${activeRace.id}"></span>
+            </span>
+            <div th:class="raceService"><span th:text="${activeRace.raceName}"></span> - <span th:text="${activeRace.place}"></span> - <span th:text="${activeRace.returnStartDate()}"></span> - <span th:text="${activeRace.returnEndDate()}"></span></div>
+        </a>
+    </div>
+    <div th:class="heading_t">
+        <!-- aktivny pretek -->
+
+        <div th:id="export" style="width: 20%" th:class="addRace" >
+            <a id="exportCsv">
+                <label style="color: blue" th:class="div-button">
+                    <img alt="exportCsv" class="plus" th:src="@{/images/plus.png}">
+                    Export prihlášok
+                </label>
+            </a>
+
+        </div>
+
+        <div th:id="uploadApp" style="width: 40%" th:class="addRace">
+            <a >
+                <label style="color: blue" th:class="div-button">
+                    <img alt="exportCsv" class="plus" th:src="@{/images/Settings-icon.png}">
+                    Nahranie disciplín a prihlášok na server
+                </label>
+            </a>
+        </div>
+    </div>
+    <hr>
+    <div th:class="stuck">
+        <table class=" asideTable " th:id="tableLeft" >
+            <thead>
+                <tr class="hidden">
+                    <th></th>
+                    <th></th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody >
+                <tr th:id="${discipline.id+'aside'}"  th:each="discipline: ${disciplines}">
+                    <td th:class="hidden"  th:text="${discipline.id}"></td>
+                    <td style="width: 30%; color:#2B2D42 "  th:text="${discipline.disciplineTime}+' '+${discipline.category}"></td>
+                    <td style="width: 100%; " th:text="${discipline.disciplineName}+'  '+${discipline.phaseName}+' '+${discipline.phaseNumber}"></td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div  style="overflow:scroll;margin-left:15%; height:700px;">
+        <div th:each="entry: ${startListMap}"  th:id="${entry.key.id}" th:with="list=${entry.value}" class="display hidden">
+    <table class="rightTable"  style="width:75%!important;"  >
+        <thead>
+            <tr style="background-color: #0b5ea0; color: white;">
+                <th style="  padding-left:20px;" th:text="${entry.key.disciplineName +
+                ',  '+entry.key.getDayMonth()+' - '+entry.key.disciplineTime+
+                ', '+entry.key.phaseName+' - '+entry.key.phaseNumber}" colspan="4">
+                </th>
+                <th colspan="3">
+                    <span th:if="${entry.key.cameraId!=null}">
+                        <span th:text="${entry.key.cameraId}">
+                        </span>
+                        <span>
+                            <img  alt="addAthletes" class="plus" th:src="@{/images/camera.png}">
+                    </span>
+                </span>
+                    <span style="float: right;margin-right: 10%">
+                        <img th:value="${entry.key.id}" alt="addAthletes" class="plus addAthletes" th:src="@{/images/addBLACK.png}">
+                    </span>
+                    <span style="float: right;margin-right: 10%">
+                        <img th:value="${entry.key.id}" alt="saveAthletes" class="plus saveAthletes" th:src="@{/images/save.png}">
+                    </span>
+                    <span th:if="${entry.key.disciplineType=='run'}">
+                        <span style="float: right;margin-right: 10%">
+                             <img th:value="${entry.key.id}" alt="splitAthletes" class="plus split" th:src="@{/images/split.png}">
+                         </span>
+                    </span>
+
+
+                </th>
+            </tr>
+            <tr>
+                <span th:if="${entry.key.disciplineType=='run'}">
+                     <th style="width: 5%">Line</th>
+                </span>
+                <span th:if="${entry.key.disciplineType!='run'}">
+                     <th class="hidden">Line</th>
+                </span>
+                <th style="width: 10%">Bib</th>
+                <th>Meno</th>
+                <th>Dátum narodenia</th>
+                <th>Klub</th>
+                <th>Štart výkon</th>
+                <th></th>
+            </tr>
+        </thead>
+            <tbody>
+                <tr th:each="startList : ${entry.value}" >
+                     <span th:if="${entry.key.disciplineType=='run'}">
+                        <td class="input-hover" style="width: 5%" th:text="${startList.line}"></td>
+                     </span>
+                    <span th:if="${entry.key.disciplineType!='run'}">
+                     <td class="hidden">Line</td>
+                </span>
+                    <td class="input-hover" style="width: 10%">
+                        <span th:if="${#maps.containsKey(bibMap,startList.athlete)}">
+                            <span  th:text="${bibMap.get(startList.athlete).bib}"></span>
+                        </span>
+                    </td>
+                    </span>
+                    <td th:value="${startList.id}" style="width: 20%" th:text="${startList.athlete.firstName +' '+startList.athlete.surname}"></td>
+                    <td style="width: 10%" th:text="${#dates.format(startList.athlete.getDateBirth(), 'dd.MM.yyyy')}"></td>
+                    <td style="width: 20%">
+                        <span th:if="${#maps.containsKey(clubs,startList.athlete)}">
+                            <span  th:text="${clubs.get(startList.athlete).club.shortcutClubName}"></span>
+                        </span>
+                    </td>
+                    <td style="width: 20%" class="input-hover" ><span th:if="${startList.discipline.disciplineType=='run'}">
+                        <span th:text="${startList.getTimeStartPerformance()}"></span>
+                    </span>
+                        <span th:if="${startList.discipline.disciplineType!='run'}" > <span th:text="${startList.startPerformance}"></span></span>
+                    </td>
+                    <td><a th:value="${startList.id}" class="deleteButton" ><img  alt="active" class="activatedButton plus" th:src="@{/images/delete.png}"></a></td>
+                </tr>
+            </tbody>
+    </table>
+
+        </div>
+    </div>
+
+</main>
+<footer th:class="footer">
+    ©PeterRigoDevelopment
+</footer>
+<div id="loading" class="center-screen"><img class="loading-img" alt="ha"  th:src="@{/images/loading.gif}"></div>
+<div id="overlay-down" class="overlay"></div>
+<div th:id="overlay"></div>
+
+
+<script th:src="@{/js/sideMenu.js}"></script>
+<script th:src="@{/js/cookies.js}" type="text/javascript"></script>
+<script th:src="@{/js/applications.js}"></script>
+<link rel="stylesheet" type="text/css" th:href="@{/css/tables_new.css}"/>
+
+</body>
+</html>

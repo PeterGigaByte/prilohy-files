@@ -1,0 +1,38 @@
+.dataTables_length{
+    padding-left: 2%;
+}
+.dataTables_info{
+    padding-left: 2%;
+}
+.dataTables_filter{
+    padding-right: 2%;
+}
+.paging_simple_numbers{
+    padding-right: 2%;
+}
+.selected{
+
+    color: black !important;
+}
+.selected>td{
+    background-color: #94b5d9 !important;
+}
+#tableLeft td{
+    cursor: pointer;
+}
+table.asideTable td{
+    width:100%;
+    height:10px;
+    text-align: center;
+}
+table.asideTable tr{
+    border-bottom: 1pt solid black;
+
+}
+.row{
+    margin-right: 0;
+}
+.col-sm-12{
+    padding-right: 0;
+}
+

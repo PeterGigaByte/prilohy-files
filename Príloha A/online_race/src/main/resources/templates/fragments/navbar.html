@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="sk" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div class="topnav" th:fragment="navigation">
+    <span sec:authorize="hasAnyAuthority('SUPERVISOR','ADMIN')">
+        <a  th:class="${activePage == 'races'} ? 'active' : ''" href="/">Preteky</a>
+        <a  th:class="${activePage == 'disciplines'} ? 'active' : ''" href="/disciplines">Disciplíny</a>
+        <a  th:class="${activePage == 'applications'} ? 'active' : ''" href="/applications">Prihlášky</a>
+        <a  th:class="${activePage == 'results'} ? 'active' : ''" href="/results">Výsledky</a>
+        <a style="color: white"   th:class="${activePage == 'database'} ? 'active' : ''"  onclick="openNav()"
+           onMouseOver="this.style.color='black';this.style.textDecoration = 'underline'"
+           onMouseOut="this.style.color='white';this.style.textDecoration = ''">Databáza klubov a pretekárov</a>
+    </span>
+    <a  th:class="${activePage == 'spectator'} ? 'active' : ''" href="/spectator/races">Divák</a>
+    <span sec:authorize="hasAnyAuthority('REGISTERED')">
+        <a th:class="${activePage == 'appRegistration'} ? 'active' : ''" href="/appRegistration">Prihlásiť atléta</a>
+    </span>
+    <span sec:authorize="hasAnyAuthority('SUPERVISOR')">
+        <a th:class="${activePage == 'roles'} ? 'active' : ''" href="/roles">Správa prístupu</a>
+    </span>
+    <span sec:authorize="isAnonymous()">
+        <a th:class="${activePage == 'login'} ? 'active' : ''"  href="/login"  style="float: right">Login</a>
+    </span>
+    <span sec:authorize="isAuthenticated()">
+        <a style="float: right" href="/logout">Odhlásiť</a>
+    </span>
+    <span th:if="${activePage == 'applications'}" sec:authorize="hasAnyAuthority('SUPERVISOR')">
+        <a id="Tooltip-2" style="float: right" class="target">Informácie</a>
+    </span>
+</div>
+</body>
+</html>

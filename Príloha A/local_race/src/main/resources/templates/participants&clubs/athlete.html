@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="sk" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Systém pre organizáciu Atl.Pretekov</title>
+    <link th:rel="stylesheet" th:href="@{/css/index.css}">
+    <link th:rel="icon" th:href="@{/images/race.png}">
+    <link th:rel="stylesheet" th:href="@{/css/maxcdnBootstrap.css}">
+    <link th:rel="stylesheet" th:href="@{/css/sideMenu.css}">
+    <script th:src="@{/js/jquery-3.5.1.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jbox.js}"></script>
+    <link th:rel="stylesheet" th:href="@{/css/jbox.css}">
+    <link rel="stylesheet" type="text/css" th:href="@{/dataTables/datatables.min.css}"/>
+    <script type="text/javascript" th:src="@{/dataTables/datatables.min.js}"></script>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/tables_new.css}"/>
+    <script th:src="@{/js/sideMenu.js}"></script>
+    <script type="text/javascript" th:src="@{/js/athleteDetail.js}"></script>
+
+
+
+</head>
+<body>
+
+<div th:replace="~{fragments/navbar :: navigation}"> </div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/athletes">Pretekári</a>
+    <a href="/clubs">Kluby</a>
+    <a href="/databases">Stiahnuť databázu</a>
+    <a href="/contact">Kontakt</a>
+</div>
+
+<!-- Use any element to open the sidenav -->
+
+<main th:id="main">
+    <div th:class="heading_t">
+        <!-- aktivny pretek -->
+        <div  th:class="addRace">
+            <a>
+                <label style="color: blue" th:class="div-button">
+                    <span th:text="${athlete.firstName+' '+athlete.surname}" style="font-size: 50px"></span>
+                </label>
+            </a>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-sm-4" >
+            <img alt="vyvojar" class="profilePicture" th:src="@{/images/foto.jpg}">
+        </div>
+        <div class="form-group col-md-6">
+            <label>Aktuálny klub</label>
+            <span style="margin-left: 200px" th:text="${actualClub.club.clubName}"></span>
+        </div>
+        <div class="col-sm-5" >
+            <form  th:action="@{/athletes/{id}(id=${athlete.id})/saveAthlete}" th:object="${athlete}" method="post">
+                <input th:class="hidden" id="id" th:value="*{id}" th:field="*{id}" type="text" class="form-control" >
+                <div class="form-row" style="margin-top: 5px">
+                    <div class="form-group col-md-6">
+                        <label for="fistName">Meno</label>
+                        <input th:field="*{firstName}" type="text" class="form-control" id="fistName" placeholder="Meno" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <label for="surname">Priezvisko</label>
+                        <input th:field="*{surname}" type="text" class="form-control" id="surname" placeholder="Priezvisko" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <div class="form-group col-md-6">
+                        <label for="birth">Dátum narodenia</label>
+                        <input th:field="*{dateBirth}" type="date" class="form-control" id="birth" placeholder="Dátum narodenia" required>
+                    </div>
+                </div>
+                <div class="form-group col-md-6">
+                <input th:class="hidden" th:field="*{sex}" type="text" class="form-control" id="sex"  required>
+                 <input type="radio" id="male" name="gender" value="male">
+                <label for="male">Male</label>
+                 <input type="radio" id="female" name="gender" value="female">
+                <label for="female">Female</label><br>
+                </div>
+                <div class="col-sm-10">
+                    <button type="submit" class="btn btn-primary">Editovať</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <hr>
+    <div style="padding-bottom: 30px">
+        <ul class="nav nav-tabs" role="tablist">
+            <li id="results" class="active">
+                <a data-toggle="tab">Výsledky</a>
+            </li>
+            <li id="clubT">
+                <a data-toggle="tab">Prestupy</a>
+            </li>
+        </ul>
+    </div>
+    <table th:id="tableResults">
+        <thead>
+        <tr>
+            <th colspan="5">
+                Výsledky
+            </th>
+        </tr>
+        <tr th:id="first_tr" >
+            <th>Dátum</th>
+            <th>Názov atletického podujatia</th>
+            <th>Miesto</th>
+            <th>Disciplína</th>
+            <th>Poradie</th>
+            <th>Výkon</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="result: ${results}" >
+            <td th:text="${result.discipline.getDateForCSV()}"></td>
+            <td th:text="${result.discipline.race.raceName}" ></td>
+            <td th:text="${result.discipline.race.place}"></td>
+            <td th:text="${result.discipline.disciplineName}"></td>
+            <td th:text="${result.place}"></td>
+            <td ><span th:if="${result.discipline.disciplineType=='run'}">
+                        <span th:text="${result.status!=null ? result.status : result.getTimeResultPerformance()}"></span>
+                    </span>
+                <span th:if="${result.discipline.disciplineType!='run'}" > <span th:text="${result.resultPerformance}"></span></span>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    <table th:id="tableClubs">
+        <thead>
+        <tr>
+            <th colspan="5">
+                Prestupy
+                <img style="margin-left: 60px;width: 35px; height: 35px" id="addTransaction" class="plus" th:src="@{/images/plus.png}">
+            </th>
+        </tr>
+        <tr th:id="first_tr" >
+            <th>Odkedy</th>
+            <th>Dokedy</th>
+            <th>Názov klubu</th>
+            <th>Dôvod</th>
+            <th>Zmazanie</th>
+
+        </tr>
+        </thead>
+        <tbody>
+        <tr th:each="club: ${clubs}">
+            <td th:text="${#dates.format(club.since, 'dd.MM.yyyy')}"></td>
+            <td th:text="${#dates.format(club.to, 'dd.MM.yyyy')}"></td>
+            <td th:text="${club.club.clubName}"></td>
+            <td th:text="${club.reason}"></td>
+            <td><img th:value="${club.idTransfer}" style="width: 35px; height: 35px;margin-left: 60px" class="plus delete" th:src="@{/images/delete.png}"></td>
+        </tr>
+        </tbody>
+    </table>
+</main>
+
+<footer th:class="footer">
+    ©PeterRigoDevelopment
+</footer>
+<div th:id="overlay"></div>
+
+
+</body>
+</html>

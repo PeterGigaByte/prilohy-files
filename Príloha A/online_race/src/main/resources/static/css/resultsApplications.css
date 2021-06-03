@@ -1,0 +1,48 @@
+.stuck {
+    position: fixed;
+    top: 180px;
+    left: 10px;
+    height: 75vh;
+    max-height: 100%;
+    width: 230px;
+    background-color: #eee;
+    overflow-y: scroll;
+    margin: 10px;
+
+}
+#tableLeft tr{
+    height: 60px;
+}
+.stuck p {
+    margin: 10px;
+}
+.not-stuck {
+
+    width: 80%;
+    flex: 10;
+    height: 48vh;
+    overflow: scroll;
+
+}
+.stable {
+
+    width: 80%;
+}
+table{
+    width: 100%;
+
+}
+td{
+    text-align: right;
+    background-color: white;
+}
+#tableFormADD td{
+    text-align: left;
+    background-color: white;
+}
+#tableFormADD{
+    width: 700px!important;
+}
+#export{
+    width: 100%;
+}

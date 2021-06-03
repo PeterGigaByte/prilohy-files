@@ -1,0 +1,557 @@
+body{
+    min-width: 960px;
+}
+/* Add a black background color to the top navigation */
+.topnav {
+    background-color: #333;
+    overflow: hidden;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+    float: left;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+table {
+     font-family: Roboto,sans-serif;
+     border-collapse: collapse;
+     width: 98%!important;
+     margin-left: auto;
+     margin-right: auto;
+ }
+
+td, th {
+    padding-left: 10px !important;
+    width:20%;
+    height:50px;
+    text-align: left;
+}
+td, th {
+    padding-left: 10px !important;
+    width: 20%;
+    height: 50px;
+    text-align: left;
+}
+
+tr:nth-child(even) {
+
+    background-color: #dddddd;
+}
+.raceService{
+    color: green;
+    font-size: 20px;
+}
+.activeRace{
+    padding-top: 10px;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 10px;
+}
+.race{
+    font-size: 20px;
+    color: #4CAF50;
+    display: inline;
+}
+a:hover{
+    cursor: pointer;
+    opacity: 0.9;
+}
+a:link,a:visited{
+    text-decoration: none;
+}
+.heading_t{
+    width: 100%;
+    display: inline-block;
+}
+.addRace{
+    color: blue;
+    font-size: 20px;
+    display: inline-block;
+    width: 20%;
+    padding-left: 15px;
+}
+.editActiveRace{
+    color: blue !important;
+    font-size: 20px;
+    display: inline-block;
+    width: 20%;
+
+}
+.search{
+    color: blue;
+    font-size: 20px;
+    display: inline-block;
+    width: 25%;
+
+
+}
+.minDate{
+    color: blue;
+    font-size: 20px;
+    display: inline-block;
+    width: 15%;
+
+}
+.maxDate{
+    color: blue;
+    font-size: 20px;
+    display: inline-block;
+    width: 15%;
+
+}
+.plus{
+    top: 50px;
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+}
+.activeButton{
+    top: 50px;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.activatedButton{
+    top: 50px;
+    display: inline-block;
+    width: 35px;
+    height: 35px;
+    margin-right: 50px;
+}
+.footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: gray;
+    color: white;
+    text-align: center;
+}
+.div-button:visited{
+
+}
+.div-button:hover{
+    cursor: pointer;
+    color: green;
+    opacity: 0.9;
+
+}
+.behind-scene{
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+
+    max-width: 80%;
+}
+.behind-scene-header .title{
+    padding-left: 5px;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.behind-scene-body{
+    height: 100%;
+    width: 100%;
+    min-width: 500px;
+    padding:10px 15px;
+}
+.behind-scene.active{
+    transform: translate(-50%,-50%) scale(1);
+}
+.exit{
+     float: right;
+     width: 50px;
+     height: 50px;
+}
+#overlay{
+    position: fixed;
+    opacity: 0;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0, .5);
+    pointer-events: none;
+}
+#overlay.active{
+    opacity: 1;
+    pointer-events: all;
+}
+.behind-scene-header .title{
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.center {
+    margin: auto;
+    width: 100%;
+    padding: 10px;
+}
+.input-div{
+    font: 15px Arial, sans-serif;
+    padding-bottom: 20px;
+}
+.input-box{
+    width: 100%;
+    margin-top: 15px;
+    margin-left: 20px;
+    display: block;
+    font: 20px Arial, sans-serif;
+}
+.inlineDescription{
+    padding-top: 10px;
+    padding-left: 16px;
+    padding-bottom: 10px;
+}
+.first,.second,.third{
+    border-radius: 5px;
+    width: 32%;
+    display: inline-block;
+    font-size: 20px;
+    text-align: center;
+
+}
+.first{
+    background: cadetblue;
+}
+.second{
+    background: silver;
+}
+.third{
+    background: #94b5d9;
+}
+.first:hover{
+    cursor: pointer;
+    background: greenyellow;
+}
+.second:hover{
+    cursor: pointer;
+    background: greenyellow;
+}
+.third:hover{
+    cursor: pointer;
+    background: greenyellow;
+}
+.button-submit{
+    font-size: 15px;
+    margin-left: 32%;
+    text-align: center;
+    width: 120px;
+    height: 25px;
+    padding-bottom:25px;
+    color: blue;
+    background: lawngreen;
+}
+#checkboxH,#checkboxH2,#checkboxO,#checkboxR{
+    width: 20px;
+    height: 15px;
+}
+#detailsBlock{
+    display: none;
+}
+.necessary{
+    color: red;
+    font-size: 15px;
+}
+#settingsBlock{
+    display: none;
+}
+.firstColumn{
+    float: left;
+    display: inline-block;
+}
+.secondColumn{
+    float: left;
+    display: inline-block;
+}
+.hidden{
+    display: none;
+}
+input[type="number"]{
+    width: 60%;
+}
+
+html{
+    height: 100%;
+}
+
+#first_tr{
+    background-image: linear-gradient(to bottom, cyan 1%, rgb(96,96,96) 20%);
+    color: white;
+}
+label,
+input {
+    display: block;
+    text-align: left;
+}
+/* Restyle jBoxes */
+
+#jBoxLogin .jBox-content {
+    padding: 0;
+}
+
+#jBoxLogin .jBox-title {
+    text-align: center;
+    line-height: 1.6;
+    padding: 15px 0;
+    font-size: 20px;
+}
+
+.jBox-TooltipSmall.LoginTooltipSmall .jBox-content,
+.jBox-TooltipError.LoginTooltipError .jBox-content {
+    font-size: 13px;
+    padding: 5px 10px;
+    line-height: 18px;
+}
+
+.jBox-TooltipSmall.LoginTooltipSmall .jBox-container,
+.jBox-TooltipError.LoginTooltipError .jBox-container {
+    border-radius: 2px;
+    font-weight: bold;
+    color: #fff;
+}
+
+.jBox-TooltipSmall.LoginTooltipError .jBox-container {
+    background: #d00;
+}
+
+.jBox-TooltipSmall.LoginTooltipSmall .jBox-container {
+    background: #246bb3;
+}
+
+.jBox-TooltipSmall.LoginTooltipSmall .jBox-pointer:after {
+    background: #246bb3;
+}
+
+/* Content */
+
+.login-container {
+    display: none;
+}
+
+.login-container.active {
+    display: block;
+}
+
+.login-body {
+    padding: 0 25px;
+}
+
+.login-container button {
+    margin: 25px 0 0;
+}
+
+.login-textfield-wrapper {
+    position: relative;
+}
+
+.login-remember {
+    margin: 25px 0 0;
+    height: 20px;
+}
+
+#LoginWrapper.request-running .login-footer a,
+#LoginWrapper.request-running .login-footer span {
+    cursor: default !important;
+    text-decoration: none !important;
+}
+
+/* Form elements */
+
+.login-textfield {
+    width: 100%;
+    border: 0;
+    border-bottom: 2px solid #ddd;
+    padding: 6px 2px;
+    font-size: 18px;
+    margin-top: 25px;
+    transition: border-color .2s;
+}
+
+.login-textfield:hover {
+    border-bottom-color: #ccc;
+}
+
+.login-textfield:focus {
+    border-bottom-color: #246bb3;
+}
+
+.login-textfield.textfield-error {
+    border-bottom-color: #d00;
+}
+
+.login-checkbox {
+    float: left;
+    position: relative;
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    background: #eee;
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, .05);
+    transition: background-color .2s;
+}
+
+.login-checkbox.login-checkbox-active {
+    box-shadow: none;
+    background: #7d0;
+}
+
+.login-checkbox-check {
+    opacity: 0;
+    background: no-repeat center center;
+    background-size: 14px;
+    background-image: url(data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCA0MjQuNTMgMzE1LjczIj4KPHBhdGggZmlsbD0iI2ZmZmZmZiIgZD0iTTQ2NS4wNywxNTMuNmExMC4zMSwxMC4zMSwwLDAsMCwwLTE0LjkzTDQyOC44LDEwMi40YTEwLjMxLDEwLjMxLDAsMCwwLTE0LjkzLDBMMjAwLjUzLDMxNS43Myw5OC4xMywyMTMuMzNhMTAuMzEsMTAuMzEsMCwwLDAtMTQuOTMsMEw0Ni45MywyNDkuNmExMC4zMSwxMC4zMSwwLDAsMCwwLDE0LjkzbDE0Ny4yLDE0Ny4yYTEwLjMxLDEwLjMxLDAsMCwwLDE0LjkzLDBsMjU2LTI1OC4xM1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC00My43MyAtOTkuMikiLz4KPC9zdmc+);
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -10px;
+    margin-left: -10px;
+    transition: opacity .2s;
+}
+
+.login-checkbox.login-checkbox-active .login-checkbox-check {
+    opacity: 1;
+}
+
+.login-checkbox-label {
+    float: left;
+    cursor: pointer;
+    width: calc(100% - 20px);
+    line-height: 20px;
+    font-size: 17px;
+    padding: 0 0 0 12px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.login-button {
+    width: 100%;
+    border: 0;
+    color: #fff;
+    background: #246bb3;
+    border-radius: 4px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    padding: 0;
+    transition: background-color .2s;
+}
+
+.login-button:hover {
+    background: #3878c1;
+}
+
+.login-button:active {
+    background: #246bb3;
+}
+
+.login-button[disabled] {
+    cursor: default !important;
+    color: #ccc !important;
+    background: #eee !important;
+}
+
+.loading-bar,
+.login-button[disabled].loading-bar {
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, .4) 25%, rgba(255, 255, 255, .0) 25%, rgba(255, 255, 255, .0) 50%, rgba(255, 255, 255, .4) 50%, rgba(255, 255, 255, .4) 75%, rgba(255, 255, 255, .0) 75%, rgba(255, 255, 255, .0)) !important;
+    background-size: 32px 32px !important;
+    background-repeat: repeat !important;
+    transition: background-position 60000s linear !important;
+    background-position: 4000000px !important;
+}
+
+/* Footer */
+
+.login-footer {
+    background: #fafafa;
+    border-top: 1px solid #eee;
+    border-radius: 0 0 4px 4px;
+    font-size: 17px;
+    line-height: 1.6;
+    padding: 15px 0 15px 25px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.login-footer span {
+    cursor: pointer;
+    color: #297acc;
+}
+.login-footer span:hover {
+    text-decoration: underline;
+}
+
+.div-button:hover{
+    text-decoration: underline!important;
+}
+.split:hover,.saveAthletes:hover,.addAthletes:hover{
+    cursor: pointer;
+    opacity: 0.8;
+}
+.input-hover:hover{
+    cursor: pointer;
+    background-color: #d4d8d9;
+}
+.input-hover:focus{
+    cursor: text;
+    background-color: white;
+}
+.loading-img{
+    width: 50px;
+    height: auto;
+}
+.overlay
+{
+    z-index:-1;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,.5);
+    transition : all 1s linear;
+    opacity:0;
+    position: fixed;
+    overflow-y: scroll;
+    top: 0; left: 0; right: 0; bottom: 0;
+}
+.visible{
+    opacity: 1!important;
+    z-index:5!important;
+}
+.center-screen {
+    opacity:0;
+    z-index:-1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
+

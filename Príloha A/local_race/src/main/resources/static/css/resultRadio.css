@@ -1,0 +1,9 @@
+.btn span.glyphicon {
+    opacity: 0;
+}
+.btn.active span.glyphicon {
+    opacity: 1;
+}
+.redC{
+    background-color: #ff5b5b;
+}

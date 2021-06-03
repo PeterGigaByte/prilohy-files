@@ -1,0 +1,31 @@
+table.asideTable th{
+    width:100%;
+    height:10px;
+    text-align: center;
+}
+table.asideTable tr{
+    z-index: 10000;
+    width:100%;
+    height:10px;
+    text-align: center;
+}
+table.asideTable tr:nth-child(even){
+    z-index: 10000;
+    background-color: #eee;
+}
+table.asideTable thead{
+    display:table;
+    width: 100%;
+    border-style: solid;
+ }
+table.asideTable{
+    width: 100%;
+}
+table.asideTable tbody > tr:hover td {
+    background-color: #eee;
+}
+.rightTable td{
+    text-align: left;
+    padding-left: 5px;
+}
+

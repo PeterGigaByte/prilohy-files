@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="sk" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prihlášky</title>
+    <link th:rel="icon"
+          th:href="@{/images/race.png}">
+    <link th:rel="stylesheet" th:href="@{/css/index.css}">
+    <link th:rel="stylesheet" th:href="@{/css/table.css}">
+    <link th:rel="stylesheet" th:href="@{/css/maxcdnBootstrap.css}">
+
+
+    <link rel="stylesheet" th:href="@{/css/resultsApplications.css}">
+    <script type="text/javascript" th:src="@{/js/ajaxJquerry.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jbox.js}"></script>
+    <link th:rel="stylesheet" th:href="@{/css/jbox.css}">
+
+    <link th:rel="stylesheet" th:href="@{/css/sideMenu.css}">
+
+    <link rel="stylesheet" type="text/css" th:href="@{/dataTables/datatables.min.css}"/>
+    <script type="text/javascript" th:src="@{/dataTables/datatables.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/euTime.js}"></script>
+
+</head>
+<body>
+
+<div th:replace="~{fragments/navbar :: navigation}"></div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/athletes">Pretekári</a>
+    <a href="/clubs">Kluby</a>
+    <a href="/contact">Kontakt</a>
+</div>
+
+<main th:id="main">
+    <table  th:id="table">
+        <thead>
+        <tr th:id="first_tr" >
+            <th>Dátum</th>
+            <th>Názov</th>
+            <th>Miesto konania</th>
+            <th>Organizátor</th>
+            <th>Prihlasovanie</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+        <tr   th:each="race: ${races}">
+            <td class="text-center" th:text="${race.returnStartDate()}"></td>
+            <td class="text-center" th:text="${race.raceName}"></td>
+            <td class="text-center" th:text="${race.place}"></td>
+            <td class="text-center" th:text="${race.organizer}"></td>
+            <td class="text-center"><a th:href="@{/appRegistration/{id}(id=${race.getId()})}">Prihlasovanie atléta</a></td>
+        </tr>
+        </tbody>
+    </table>
+    <div style="height: 25px"></div>
+
+</main>
+<footer th:class="footer">
+    ©PeterRigoDevelopment
+</footer>
+
+<div th:id="overlay"></div>
+
+
+<script th:src="@{/js/sideMenu.js}"></script>
+<link rel="stylesheet" type="text/css" th:href="@{/css/tables_new.css}"/>
+<script type="text/javascript" th:src="@{/js/appRegister.js}"></script>
+</body>
+</html>

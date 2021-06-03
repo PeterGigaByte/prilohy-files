@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sk" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Správa prístupu</title>
+    <link th:rel="icon"
+          th:href="@{/images/race.png}">
+    <link th:rel="stylesheet" th:href="@{/css/index.css}">
+    <link th:rel="stylesheet" th:href="@{/css/table.css}">
+    <link th:rel="stylesheet" th:href="@{/css/maxcdnBootstrap.css}">
+
+
+
+    <script type="text/javascript" th:src="@{/js/ajaxJquerry.js}"></script>
+    <script type="text/javascript" th:src="@{/js/jbox.js}"></script>
+    <link th:rel="stylesheet" th:href="@{/css/jbox.css}">
+
+    <link th:rel="stylesheet" th:href="@{/css/sideMenu.css}">
+
+    <link rel="stylesheet" type="text/css" th:href="@{/dataTables/datatables.min.css}"/>
+    <script type="text/javascript" th:src="@{/dataTables/datatables.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/euTime.js}"></script>
+    <script type="text/javascript" th:src="@{/js/tableToJsonRow.js}"></script>
+    <script type="text/javascript" th:src="@{/js/tableToJsonCell.js}"></script>
+    <script type="text/javascript" th:src="@{/js/tableToJson.js}"></script>
+    <script type="text/javascript" th:src="@{/js/inlineEditor.js}"></script>
+
+
+
+</head>
+<body>
+
+<div th:replace="~{fragments/navbar :: navigation}"> </div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/athletes">Pretekári</a>
+    <a href="/clubs">Kluby</a>
+    <a href="/contact">Kontakt</a>
+</div>
+
+<main th:id="main">
+    <form th:object="${users}" method="post" >
+    <table  th:id="table">
+        <thead>
+        <tr th:id="first_tr" >
+            <th>Používateľské meno</th>
+            <th>Email</th>
+            <th>Klub</th>
+            <th>Rola</th>
+            <th>Editovať</th>
+        </tr>
+        </thead>
+        <tbody id="tbody">
+        <tr th:each="user,i: ${users}">
+            <td><span  th:text="${user.username}"></span></td>
+            <td><span th:text="${user.username}"></span></td>
+            <td>
+                <span  th:text="${user.club?.clubName}"></span>
+            </span></td>
+            <td><span th:each="role: ${user.roles}">
+                <span th:text="${role.name}"></span>
+            </span>
+            </td>
+            <td><a th:href="@{/roles/edit/{id}(id=${user.getUserId()})}"><img  style="width: 35px; height: 35px" alt="active" class="activatedButton" th:src="@{/images/Settings-icon.png}"></a>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+    </form>
+</main>
+<footer th:class="footer">
+    ©PeterRigoDevelopment
+</footer>
+
+<div th:id="overlay"></div>
+
+
+<script th:src="@{/js/sideMenu.js}"></script>
+<script th:src="@{/js/cookies.js}" type="text/javascript"></script>
+<script th:src="@{/js/roles.js}" type="text/javascript"></script>
+<link rel="stylesheet" type="text/css" th:href="@{/css/tables_new.css}"/>
+
+</body>
+</html>

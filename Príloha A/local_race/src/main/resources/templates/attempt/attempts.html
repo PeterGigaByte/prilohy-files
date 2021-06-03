@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="sk" xmlns:th="http://www.thymeleaf.org">
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Výsledky</title>
+    <link th:rel="icon"
+          th:href="@{/images/race.png}">
+    <link th:rel="stylesheet" th:href="@{/css/index.css}">
+    <link th:rel="stylesheet" th:href="@{/css/table.css}">
+    <script type="text/javascript" th:src="@{/js/ajaxJquerry.js}"></script>
+    <link th:rel="stylesheet" th:href="@{/css/maxcdnBootstrapVer2.css}">
+    <script type="text/javascript" th:src="@{/js/cloudFlareAjax.js}"></script>
+    <script type="text/javascript" th:src="@{/js/maxcdnBootstrap.js}"></script>
+    <link th:rel="stylesheet" th:href="@{/css/maxcdnBootstrap.css}">
+    <link th:rel="stylesheet" th:href="@{/css/resultRadio.css}">
+
+
+    <link rel="stylesheet" th:href="@{/css/resultsApplications.css}">
+    <script type="text/javascript" th:src="@{/js/jbox.js}"></script>
+    <link th:rel="stylesheet" th:href="@{/css/jbox.css}">
+
+    <link th:rel="stylesheet" th:href="@{/css/sideMenu.css}">
+
+    <link rel="stylesheet" type="text/css" th:href="@{/dataTables/datatables.min.css}"/>
+    <script type="text/javascript" th:src="@{/dataTables/datatables.min.js}"></script>
+    <script type="text/javascript" th:src="@{/js/euTime.js}"></script>
+    <script type="text/javascript" th:src="@{/js/tableToJsonRow.js}"></script>
+    <script type="text/javascript" th:src="@{/js/tableToJsonCell.js}"></script>
+    <script type="text/javascript" th:src="@{/js/tableToJson.js}"></script>
+    <script type="text/javascript" th:src="@{/js/inlineEditor.js}"></script>
+    <script type="text/javascript" th:src="@{/js/attempts.js}"></script>
+
+
+
+</head>
+<body>
+
+<div th:replace="~{fragments/navbar :: navigation}"> </div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/athletes">Pretekári</a>
+    <a href="/clubs">Kluby</a>
+    <a href="/contact">Kontakt</a>
+</div>
+
+<main th:id="main">
+
+    <div th:class="activeRace">
+        <a >
+            <span class="hidden" th:if="${activeRace.id!=null}">
+                <span th:id="raceId" th:text="${activeRace.id}"></span>
+            </span>
+            <div th:class="raceService"><span th:text="${activeRace.raceName}"></span> - <span th:text="${activeRace.place}"></span> - <span th:text="${activeRace.returnStartDate()}"></span> - <span th:text="${activeRace.returnEndDate()}"></span></div>
+        </a>
+    </div>
+    <div th:class="heading_t">
+            <div class="form-group">
+                <label for="attempt">Počet pokusov</label>
+                    <input readonly id="attempt" th:name="attempt" th:value="${numberOfAttempts}" style="width: 200px;" type="number" min="0" max="10" class="form-control" placeholder="Počet pokusov">
+            </div>
+    </div>
+    <h1 th:text="${discipline.disciplineName +' '+ discipline.category  +' '+discipline.phaseName}"></h1>
+    <main>
+        <form th:object="${attempts}"   th:action="@{/results/attempts/{raceId}/{disciplineId}/editResults(raceId=${activeRace.id},disciplineId=${discipline.id})}" method="post">
+        <table  style="width: 100%" class="rightTable" id="table">
+            <thead>
+                <tr style="background-color: #0b5ea0; color: white;">
+                    <th style="width: 5%">
+                        Poradie
+                    </th>
+                    <th style="width: 5%">
+                        Bib
+                    </th>
+                    <th style="width: 5%">
+                        Meno
+                    </th>
+                    <th style="width: 5%">
+                        Dátum narodenia
+                    </th>
+                    <th style="width: 5%">
+                        Klub
+                    </th>
+                    <span th:each="i: ${#numbers.sequence(1, numberOfAttempts)}">
+                        <th style="width: 10%" th:text="${i+'. pokus'}">
+
+                        </th>
+                    </span>
+                    <th style="width: 5%">
+                        Celkový výkon
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr th:each="list: *{startList}">
+                    <td th:text="${list.getPlace()}"></td>
+                    <td th:text="${#maps.containsKey(bibMap,list.athlete) ? bibMap.get(list.athlete).getBib() : ''}"></td>
+                    <td th:text="${list.athlete.firstName +' '+list.athlete.surname}"></td>
+                    <td th:text="${#dates.format(list.athlete.getDateBirth(), 'dd.MM.yyyy')}"></td>
+                    <td th:text="${#maps.containsKey(clubs,list.athlete) ? clubs.get(list.athlete).club.shortcutClubName : ''}"></td>
+                    <span th:each="i: ${attempts.mappedAttempts.get(list.id)}">
+                        <td >
+                            <input th:field="*{attemptMap['__${i.idAttempt}__']}"  th:value="*{attemptMap['__${i.idAttempt}__']}">
+                        </td>
+                    </span>
+                    <td th:text="${list.getResultPerformance()}"></td>
+                </tr>
+            </tbody>
+        </table>
+            <button type="submit" class="btn btn-primary">Aktualizovať poradie a výkony</button>
+        </form>
+    </main>
+</main>

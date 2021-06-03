@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="sk" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.w3.org/1999/xhtml">
+<head>
+
+    <meta charset="UTF-8">
+    <title>Systém pre organizáciu Atl.Pretekov</title>
+    <link th:rel="icon"
+          th:href="@{/images/race.png}">
+    <link th:rel="stylesheet" th:href="@{/css/index.css}">
+
+    <link th:rel="stylesheet" th:href="@{/css/maxcdnBootstrap.css}">
+    <link th:rel="stylesheet" th:href="@{/css/sideMenu.css}">
+    <link th:rel="stylesheet" th:href="@{/css/contact.css}">
+
+
+</head>
+<body>
+
+<div th:replace="~{fragments/navbar :: navigation}"> </div>
+<div id="mySidenav" class="sidenav">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+    <a href="/athletes">Pretekári</a>
+    <a href="/clubs">Kluby</a>
+    <a href="/contact">Kontakt</a>
+</div>
+
+
+<!-- Use any element to open the sidenav -->
+<main th:id="main">
+
+    <div class="container-fluid">
+        <h1>Kontakt na vývojára</h1>
+        <div class="row">
+            <div class="col-xs-9 col-md-2" >
+                <img alt="vyvojar" class="profilePicture" th:src="@{/images/foto.jpg}">
+            </div>
+            <div class="col-xs-3 col-md-2" >
+                <h2>Profil</h2>
+                Meno: Peter
+                <br>
+                Priezvisko: Rigo
+                <br>
+                Email: <a href="mailto:boys4849@gmail.com">boys4849@gmail.com</a>
+                <br>
+                Dátum narodenia: 11.08.1999
+            </div>
+            <div class="col-xs-3 col-md-5" >
+                <h2>Sídlo</h2>
+                Obec Pata
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container-fluid">
+        <h2>Osobné rekordy</h2>
+        <div class="row">
+            <div class="col-xs-9 col-md-1" >
+                60m
+                <br>
+                100m
+                <br>
+                400m
+
+            </div>
+            <div class="col-xs-3 col-md-5" >
+                <strong>7.08</strong>
+                <br>
+                <strong>11.00</strong> // wind: 10.88
+                <br>
+                <strong>52.83</strong>
+            </div>
+
+        </div>
+    </div>
+
+</main>
+
+<footer th:class="footer">
+    ©PeterRigoDevelopment
+</footer>
+<div th:id="overlay"></div>
+
+<script th:src="@{/js/index.js}"></script>
+<script th:src="@{/js/sideMenu.js}"></script>
+</body>
+</html>
